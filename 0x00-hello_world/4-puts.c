@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * the entrary point of program returns 0
- * the program prints a string
+ * main : the entrary point of program 
+ * return : 0 if the program done succesfuly
  */
 
 int main(void)
