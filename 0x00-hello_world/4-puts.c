@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main : the entrary point of program 
- * return : 0 if the program done succesfuly
- */
+ * main-print a given string and takes void argument
+ * return:0 if the program done succesfuly beacuse main mentioned as int
+*/
 
 int main(void)
 	{
