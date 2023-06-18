@@ -1,10 +1,7 @@
 #include <stdio.h>
 /**
- * main - block of code
- * return: 0
- *
- * Description: This program get the size
- * of the variables
+ * main - main block
+ * Return: 0
  */
 int main(void)
 {
