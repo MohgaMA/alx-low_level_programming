@@ -5,9 +5,11 @@
  */
 int main(void)
 {
-	FILE *printf ;
+	FILE *printf;
+
 	printf = fopen("file.text", "w");
-	fputs("and that piece of art is useful\" \- Dora Korpar, 2015-10-19\n", printf);
+	fputs("and that piece of art is useful\" - Dora Korpar
+	, 2015-10-19\n", printf);
 	fclose(printf);
 	return (1);
 }
