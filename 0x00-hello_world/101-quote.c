@@ -1,15 +1,11 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - Block of code
- * Return: 1
+ * main - Entry point
+ * Return:1
  */
 int main(void)
 {
-	FILE *file;
-
-	file = fopen("file.txt", "w");
-	fputs("and that piece of art is useful\" - Dora Korpar
-	, 2015-10-19\n", file);
-	fclose(file);
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
 	return (1);
 }
