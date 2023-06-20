@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-	char c = 0;
+	int c = 0;
 
 	while (c < 10)
 	{
-		if (c < 9)
+		if (c != 9)
+		{
 			putchar(',');
+			putchar(' ');
+		}
 		putchar('c');
 	}
 	putchar('\n');
