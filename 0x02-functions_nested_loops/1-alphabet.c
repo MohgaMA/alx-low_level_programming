@@ -1,19 +1,21 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * print_alphabet - the main block of code
- * Return: 0
- * DEscription: function print lowercase alphabet
+ * print_alphabet - Entry point
+ * Return:0
  */
+
 void print_alphabet(void)
 {
-	char alpha = 'a';
+	char c = 'a';
 
-	while (alpha <= 'z')
+	while (c <= 'z')
 	{
-		putchar(alpha);
-		alpha++;
+		_putchar(c);
+		c++;
 
 	}
-	putchar('\n');
+	_putchar('\n');
+
 }
+
