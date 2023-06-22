@@ -7,24 +7,26 @@
  */
 int main(void)
 {
-	int c[2] = {0, 1};
+	int f = 0;
+	int s = 1;
 
-	while ((c[0] && c[1] < 9) || (c[0] && c[1] == 9))
+	while (f < 9)
 	{
-		putchar(c[0] + '0');/* to print the c value*/
-		putchar(c[1] + '0');
+		putchar(f + '0');
+		putchar(s + '0');
 
-		if (c[0] != 9 && c[1] == 9)/* to define when the , and space will be put*/
+		while (s < 10)
 		{
-			if (c[0] == c[1])/*to make sure the repeted digit will not be printed*/
-			{
-				continue;
-			}
+			if (s == f)
+			continue;
+
 			putchar(',');
 			putchar(' ');
+
+			s++;
 		}
-		c[1]++;
-		c[0]++;
+
+		f++;
 	}
 	putchar('\n');
 	return (0);
