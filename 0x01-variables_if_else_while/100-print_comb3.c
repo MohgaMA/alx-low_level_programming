@@ -17,16 +17,18 @@ int main(void)
 
 		while (s < 10)
 		{
+			s++;
+
 			if (s == f)
 			continue;
 
 			putchar(',');
 			putchar(' ');
 
-			s++;
 		}
 
 		f++;
+		s = f + 1;
 	}
 	putchar('\n');
 	return (0);
