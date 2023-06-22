@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int c[2] = {0, 0};
+	int c[2] = {0, 1};
 
 	while ((c[0] && c[1] < 9) || (c[0] && c[1] == 9))
 	{
@@ -24,6 +24,7 @@ int main(void)
 			putchar(' ');
 		}
 		c[1]++;
+		c[0]++;
 	}
 	putchar('\n');
 	return (0);
