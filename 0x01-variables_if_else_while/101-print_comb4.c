@@ -17,7 +17,7 @@ int main(void)
 		{
 			while (t <= 9)
 			{
-				if ((f != s) && (f != t) && (s != t) && !(f > s && s > t))
+				if ((f != s) && (f != t) && (s != t) && !(f > s && s > t) && !(t < f))
 				{
 					putchar(f + '0');
 					putchar(s + '0');
