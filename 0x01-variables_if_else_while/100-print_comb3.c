@@ -19,7 +19,7 @@ int main(void)
 				putchar(f + '0');
 				putchar(s + '0');
 
-				if (i == '8' && j == '9')
+				if (f == 8 && s == 9)
 				{
 					putchar('\n');
 				}
