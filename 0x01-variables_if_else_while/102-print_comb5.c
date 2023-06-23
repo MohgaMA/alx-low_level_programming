@@ -14,37 +14,39 @@ int main(void)
 
 	while (f <= 7)
 	{
-		while (s <= 8)
+		while (s <= 9)
 		{
-			while (t <= 9)
-			{
-				while ((o <= 9)
-				{
+			 while (t <= 9)
+			 {
+				 while (o <= 9)
+				 {
+					 if ((f > s && s < t && t > o) && ((f != s) && (s != t)))
+					 {
+						 putchar(f + '0');
+						 putchar(s + '0');
+						 putchar(' ');
+						 putchar(t + '0');
+						 putchar(o + '0');
 
-					if ((f < s && s < t) && ((f != s) && (s != t)))
-					{
-						putchar(f + '0');
-						putchar(s + '0');
-						putchar(' ');
-						putchar(t + '0');
-						putchar(o + '0');
-
-						if ((f == 9) && (s == 8) && (t == 9) && (o == 9))
-							putchar('\n');
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
-				t++;
-			}
-			t = 0;
-			s++;
+						 if ((f == 9) && (s == 8) && (t == 9) && (o == 9))
+						 {
+							 putchar('\n');
+						 }
+						 else 
+						 {
+							 putchar(',');
+							 putchar(' ');
+						 }
+					 }
+					 o++;
+				 }
+				 o = 0;
+				 t++;
+			 }
+			 t = 0;
+			 s++;
 		}
 		s = 0;
 		f++;
 	}
-	return (0);
 }
