@@ -8,30 +8,23 @@
 int main(void)
 {
 	int f = 0;
-	int s = 1;
+	int s = 0;
 
 	while (f < 9)
 	{
-		putchar(f + '0');
-		putchar(s + '0');
-
-		while (s < 10)
+		while (s <= 9)
 		{
-			if (s == f)
+			if (!(s != f && f > s) && f != s)
 			{
-			s++;
-			continue;
+				putchar(f + '0');
+				putchar(s + '0');
+				putchar(',');
+				putchar(' ');
 			}
-
-			putchar(',');
-			putchar(' ');
-
 			s++;
 		}
-
+		s = 0;
 		f++;
-		s = f + 1;
 	}
-	putchar('\n');
 	return (0);
 }
