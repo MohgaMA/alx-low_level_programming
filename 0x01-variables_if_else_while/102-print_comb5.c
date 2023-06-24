@@ -7,46 +7,29 @@
  */
 int main(void)
 {
-	int f = 0;
-	int s = 0;
-	int t = 0;
-	int o = 0;
+	int f, s;
+	int first = 1;
 
-	while (f <= 9)
+	for (f = 0 ; f < 100 ; f++)
 	{
-		while (s <= 9)
+		for (s = f ; s < 100 ; s++)
 		{
-			while (t <= 9)
+			if (f != s)
 			{
-				while (o <= 9)
+				if (!first)
 				{
-					if (t < o)
-					{
-						if (f != s != t != o)
-						{
-							putchar(f + '0');
-							putchar(s + '0');
-							putchar(' ');
-							putchar(t + '0');
-							putchar(o + '0');
-
-							putchar(',');
-							putchar(' ');
-						}
-						else
-						{
-							putchar('\n');
-						}
-					}
-					o++;
+				putchar(',');
+				putchar(' ');
 				}
-				t++;
-				o = 0;
+				putchar(f / 10 + '0');
+				putchar(f % 10 + '0');
+				putchar(' ');
+				putchar(s / 10 + '0');
+				putchar(s % 10 + '0');
+				first = 0;
 			}
-			s++;
-			t = 0;
 		}
-		f++;
-		s = 0;
 	}
+	putchar('\n');
+	return (0);
 }
