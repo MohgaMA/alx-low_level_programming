@@ -12,41 +12,41 @@ int main(void)
 	int t = 0;
 	int o = 0;
 
-	while (f <= 7)
+	while (f <= 9)
 	{
 		while (s <= 9)
 		{
-			 while (t <= 9)
-			 {
-				 while (o <= 9)
-				 {
-					 if ((f > s && s < t && t > o) && ((f != s) && (s != t)))
-					 {
-						 putchar(f + '0');
-						 putchar(s + '0');
-						 putchar(' ');
-						 putchar(t + '0');
-						 putchar(o + '0');
+			while (t <= 9)
+			{
+				while (o <= 9)
+				{
+					if (t < o)
+					{
+						if (f != s != t != o)
+						{
+							putchar(f + '0');
+							putchar(s + '0');
+							putchar(' ');
+							putchar(t + '0');
+							putchar(o + '0');
 
-						 if ((f == 9) && (s == 8) && (t == 9) && (o == 9))
-						 {
-							 putchar('\n');
-						 }
-						 else 
-						 {
-							 putchar(',');
-							 putchar(' ');
-						 }
-					 }
-					 o++;
-				 }
-				 o = 0;
-				 t++;
-			 }
-			 t = 0;
-			 s++;
+							putchar(',');
+							putchar(' ');
+						}
+						else
+						{
+							putchar('\n');
+						}
+					}
+					o++;
+				}
+				t++;
+				o = 0;
+			}
+			s++;
+			t = 0;
 		}
-		s = 0;
 		f++;
+		s = 0;
 	}
 }
