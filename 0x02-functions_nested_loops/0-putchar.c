@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /*
  * main - the main function
@@ -6,6 +5,13 @@
  */
 int main (void)
 {
-	printf("_putchar\n");
+	char c[] = "_putchar";
+	int i = 0;
+
+	while (i < 8)
+	{
+		putchar("%c\n", c);
+		i++;
+	}
 	return(0);
 }
