@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * main - the main function
+ * print_alphabet_x10 - the main code function
  * Return: always 0
  */
 void print_alphabet_x10(void)
@@ -10,6 +10,7 @@ void print_alphabet_x10(void)
 	while (i <= 10)
 	{
 		char c = 'c';
+
 		while (c <= 'z')
 		{
 			_putchar('c');
