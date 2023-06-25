@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-/*
- * main - the main function
- * Returns: 0
+/**
+ * main - Entry point
+ * Return:0
  */
-int main (void)
+int main(void)
 {
 	int i = 0;
 	char c[8] = "_putchar";
@@ -14,5 +14,6 @@ int main (void)
 		putchar(c[i]);
 		i++;
 	}
-	return(0);
+	putchar('\n');
+	return (0);
 }
