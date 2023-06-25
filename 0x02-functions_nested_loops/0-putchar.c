@@ -11,7 +11,7 @@ int main (void)
 	while (i < 8)
 	{
 		char c[i] = "_putchar";
-		putchar("%c\n", c);
+		putchar(c[i]);
 		i++;
 	}
 	return(0);
