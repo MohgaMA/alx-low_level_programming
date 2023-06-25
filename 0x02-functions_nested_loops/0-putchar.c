@@ -10,7 +10,7 @@ int main (void)
 
 	while (i < 8)
 	{
-		putchar("%c\n", c);
+		putchar("%c\n", c[]);
 		i++;
 	}
 	return(0);
