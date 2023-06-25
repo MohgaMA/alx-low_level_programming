@@ -1,7 +1,7 @@
 #include "main.h"
-/*
- * print_alphabet_x10 - the main code function
- * Return: always 0
+/**
+ * print_alphabet_x10 - prints alphabet 10 times
+ * Return:void
  */
 void print_alphabet_x10(void)
 {
@@ -9,12 +9,13 @@ void print_alphabet_x10(void)
 
 	while (i <= 10)
 	{
-		char c = 'c';
+		char c = 'a';
 
 		while (c <= 'z')
 		{
-			_putchar('c');
+			_putchar(c);
 		}
-		c = 0;
+		i++;
+		_putchar('\n');
 	}
 }
