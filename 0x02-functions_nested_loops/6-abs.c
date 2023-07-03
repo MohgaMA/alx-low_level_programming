@@ -10,7 +10,8 @@ int _abs(int m)
 	if (m < 0)
 	{
 		m = m * -1;
-		_putchar('m');
+		return(m);
 	}
-	return (0);
+	else 
+		return (m);
 }
