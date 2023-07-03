@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-/*
- * _isalpha - controls if a character is alphabetical
- * Return: 1 if it is character
- * and 0 if it is not
- */
+/**
+*_isalpha - controls if a character is alphabetical
+*@c: character to be verified
+*Return: return 0 or 1
+*/
 int _isalpha(int c)
 {
-	if (c <= 'z' || c <= 'Z')
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
