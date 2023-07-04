@@ -20,7 +20,7 @@ void print_times_table(int n)
 				if (s != 0)
 				{
 					_putchar(',');
-					_putchar('  ');
+					_putchar(' ');
 				}
 				if (table >= 10)
 				{
@@ -29,7 +29,8 @@ void print_times_table(int n)
 				}
 				else if (table < 10 && s != 0)
 				{
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
 					_putchar((table % 10) + '0');
 				}
 				else
