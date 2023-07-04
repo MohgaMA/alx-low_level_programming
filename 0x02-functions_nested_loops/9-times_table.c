@@ -15,22 +15,24 @@ void times_table(void)
 		{
 			int table = s * f;
 
-			_putchar(' ');
-
+			if (s != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			if (table >= 10)
 			{
 				_putchar(table / 10 + '0');
 				_putchar(table % 10 + '0');
-
-				if (s != 9)
-					_putchar(',');
+			}
+			else if (table < 10 && s != 0)
+			{
+				_putchar(' ');
+				_putchar((table % 10) + '0');
 			}
 			else
 			{
 				_putchar(table % 10 + '0');
-
-				if (s != 9)
-					_putchar(',');
 			}
 		}
 		_putchar('\n');
