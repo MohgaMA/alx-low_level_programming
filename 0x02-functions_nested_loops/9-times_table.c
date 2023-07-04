@@ -7,9 +7,11 @@
 */
 void times_table(void)
 {
-	for (int f = 0 ; f <= 9 ; f++)
+	int f, s = 0;
+
+	for (f = 0 ; f <= 9 ; f++)
 	{
-		for (int s = 0 ; s <= 9 ; s++)
+		for (s = 0 ; s <= 9 ; s++)
 		{
 			int table = s * f;
 			
