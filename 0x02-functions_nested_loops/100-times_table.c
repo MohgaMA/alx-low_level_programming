@@ -22,8 +22,9 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 				}
-				if (table >= 10)
+				if (table >= 10 && table < 100)
 				{
+					_putchar(' ');
 					_putchar(table / 10 + '0');
 					_putchar(table % 10 + '0');
 				}
