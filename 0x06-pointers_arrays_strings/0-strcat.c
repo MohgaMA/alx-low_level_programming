@@ -9,6 +9,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char array[] = *dest + *src;
-	return (array);
+	int d = strlen(*dest) + 1;
+	int s = strlen(*src) + 1;
+	int i, n;
+
+	for(i = 0; *dest[i] > d; i++);
+
+	for(n = 0; n <= s; n++)
+	{
+		*dest[i] = *src[n];
+	}
+
+	return(*dest);
 }
