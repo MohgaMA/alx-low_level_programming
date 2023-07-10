@@ -1,6 +1,6 @@
 #include <unistd.h>
 /*
- * header file for static library task
+ * header files
  */
 int _putchar(char c);
 int _islower(int c);
