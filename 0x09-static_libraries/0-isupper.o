@@ -1,0 +1,7 @@
+#include "main.h"
+/*
+* is apper function
+*/
+int _isupper(int c)
+{
+}
