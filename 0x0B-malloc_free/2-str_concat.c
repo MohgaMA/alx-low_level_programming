@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, i, n = 0;
+	int len1, len2, i, n;
 	char *array;
 
 	if (s1 == NULL ) 
@@ -29,11 +29,11 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i < len1; i++)
 		array[i] = s1[i];
 
-	for (n = 0; n < len2; n++, i++)
-	{
-		array[i] = s2[n];
-	}
-	array[i] = '\0';
+	n = len2;
 
+	for (len2 = 0; len2 <= n; len2++, i++)
+	{
+		array[i] = s2[len2];
+	}
 	return (array);
 }
