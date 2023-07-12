@@ -7,24 +7,24 @@
  */
 char *_strdup(char *str)
 {
+	int len, i;
+	char *array;
+
 	if (str == NULL)
 		return (NULL);
 
-	int len = 0;
+	len = 0;
 
 	while (str[len] != '\0')
 	{
 		len++;
 	}
 
-	char *array;
-
 	array = malloc(sizeof(char) * (len + 1));
 
 	if (array == NULL)
 		return (NULL);
 	
-	int i;
 
 	for (i = 0; i <= len; i++)
 	{
