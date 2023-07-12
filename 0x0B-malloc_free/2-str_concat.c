@@ -20,14 +20,12 @@ char *str_concat(char *s1, char *s2)
 
 	array = malloc(sizeof(char) * ((len1 + len2) + 1));
 
-	for (i = 0; i <= len1; i++)
+	for (i = 0; i < len1; i++)
 		array[i] = s1[i];
 
-	n = len1;
-
-	for (i = 0; i <= len2; i++, n++)
+	for (n = 0; n <= len2; n++, i++)
 	{
-		array[n] = s2[i];
+		array[i] = s2[n];
 	}
 	if (array == NULL)
 		return (NULL);
