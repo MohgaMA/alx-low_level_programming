@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i <= len1; i++)
 		array[i] = s1[i];
 
-	for (i = 0; i <= (len1 + len2); i++)
+	for (i = 0; i <=  len2; i++)
 	{
 		array[i + len1] = s2[i];
 	}
