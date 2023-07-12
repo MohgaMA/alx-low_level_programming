@@ -13,12 +13,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	while (s1 != '\0')
+	while (*s1 != '\0')
 		len1++;
-	while (s2 != '\0')
+	while (*s2 != '\0')
 		len2++;
 
-	array = malloc(sizeof(cahr) * ((len1 + len2) + 1));
+	array = malloc(sizeof(char) * ((len1 + len2) + 1));
 
 	for (i = 0; i <= (len1 + len2); i++)
 		array[i] = s1[i];
