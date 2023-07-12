@@ -23,4 +23,5 @@ char *create_array(unsigned int size, char c)
 		m[i] = c;
 		_putchar(m[i]);
 	}
+	return (m);
 }
