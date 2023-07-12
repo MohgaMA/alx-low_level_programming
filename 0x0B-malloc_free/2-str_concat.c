@@ -25,11 +25,12 @@ char *str_concat(char *s1, char *s2)
 
 	n = len1;
 
-	for (i = 0; i <=  len2; i++, n++)
+	for (i = 0; i <= (len1 + len2); i++, n++)
 	{
 		array[n] = s2[i];
 	}
 	if (array == NULL)
 		return (NULL);
+
 	return (array);
 }
