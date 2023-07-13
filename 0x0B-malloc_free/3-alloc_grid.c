@@ -20,9 +20,11 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < width; i++)
 	{
+		array[i] = 0;
+
 		for (n = 0; n < height; n++)
 		{
-			array[i][n] = 0;
+			array[n] = 0;
 		}
 	}
 	if (array == NULL)
