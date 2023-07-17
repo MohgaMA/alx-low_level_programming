@@ -10,17 +10,15 @@
  */
 char *argstostr(int ac, char **av)
 {
-        int i, l, k = 0, len = 0;
+	int i, l, k = 0, len = 0;
 	char *str;
 
-	if ( ac == 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
-	
 	for (i = 0; i < ac; i++)
 		for (l = 0; av[i][l] != '\0'; l++)
 			len++;
 	len = len + ac;
-	
 	str = malloc(sizeof(char) * len + 1);
 	if (str == NULL)
 		return (NULL);
