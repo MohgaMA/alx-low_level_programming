@@ -9,10 +9,12 @@ int sum_them_all(const unsigned int n, ...)
 {
 	if (n == 0)
 		return (0);
+
 	int total = 0, i;
 	av_list sum;
 	av_start(sum, n);
-	for (i = 0; i <= n; i++)
+
+	for (i = 0; i < n; i++)
 	{
 		total = total + av_arg(sum, int);
 	}
