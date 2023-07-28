@@ -10,12 +10,8 @@ size_t list_len(const list_t *h)
 {
 	size_t nodes = 0;
 	
-	while (h)
+	while (h != nul)
 	{
-		if (h->str == null)
-			printf("[0] (nil)\n");
-		else
-			printf("%d elements\n", h->len);
 		nodes++;
 		h = h->next;
 	}
