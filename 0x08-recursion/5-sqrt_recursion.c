@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 /**
  * find_sqrt - returns the natural square root of a number.
  * @root: input number of the sqrt(root).
