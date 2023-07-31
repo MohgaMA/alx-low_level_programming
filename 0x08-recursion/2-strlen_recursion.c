@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
 * _strlen_recursion - gives length of a string
 * @s: string to be measured
@@ -8,11 +8,6 @@ int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		int len;
-
-		_strlen_recursion(s + 1);
-		len++;
+		return (_strlen_recursion(s + 1));
 	}
-	return (len);
 }
-
