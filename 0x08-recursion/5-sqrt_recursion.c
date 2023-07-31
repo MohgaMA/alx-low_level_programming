@@ -8,7 +8,7 @@
 int find_sqrt(int root, int para)
 {
 	int mult = para * para;
-	
+
 	if (mult == root)
 		return (para);
 	else if (mult < root)
