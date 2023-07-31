@@ -12,8 +12,8 @@ int find_sqrt(int root, int para)
 	if (mult == root)
 		return (para);
 	else if (mult < root)
-		return (find_sqrt(root, para + 1);
-	else 
+		return (find_sqrt(root, para + 1));
+	else
 		return (-1);
 }
 /**
