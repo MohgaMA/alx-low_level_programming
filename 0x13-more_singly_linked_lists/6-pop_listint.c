@@ -22,7 +22,7 @@ int pop_listint(listint_t **head)
 	fnode = hnode->next;
 	free(hnode);
 
-	hnode = fnode;
+	*head = fnode;
 
 	return (n);
 }
