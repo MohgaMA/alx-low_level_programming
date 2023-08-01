@@ -22,5 +22,5 @@ void free_listint2(listint_t **head)
 		free(address);
 		address = node;
 	}
-	head = NULL;
+	*head = NULL;
 }
