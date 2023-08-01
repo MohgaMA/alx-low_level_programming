@@ -13,7 +13,7 @@ void free_listint2(listint_t **head)
 
 	address = *head;
 	
-	if (head == NULL || *head == NULL)
+	if (head == 0 || *head == NULL)
 		return;
 	
 	while (address)
