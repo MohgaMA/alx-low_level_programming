@@ -9,15 +9,16 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t *fnode, *hnode;
+	listint_t *fnode;
 	int n;
 
-	hnode = *head;
-	if (hnode == NULL)
+	if (head == NULL)
 		return (0);
-
-	n = hnode->n;
-	fnode = hnode->next;
-	free(hnode);
+	else
+	{
+		n = (*head)->n;
+		fnode = (*head)->next;
+		free(*head);
+	}
 	return (n);
 }
