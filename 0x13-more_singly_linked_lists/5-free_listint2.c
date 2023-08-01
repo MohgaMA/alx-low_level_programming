@@ -10,15 +10,15 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *node, *address;
-
-	address = *head;
 	
 	if (head == 0 || *head == NULL)
 		return;
+
+	address = *head;
 	
 	while (address)
 	{
-		address = address->next;
+		node = address->next;
 		address = node;
 		free(address);
 	}
