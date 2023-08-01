@@ -18,9 +18,9 @@ void free_listint2(listint_t **head)
 	
 	while (address)
 	{
-		node = address->next;
-		free(address);
 		address = node;
+		address = address->next;
+		free(address);
 	}
 	*head = NULL;
 }
