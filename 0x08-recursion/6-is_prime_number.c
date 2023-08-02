@@ -13,7 +13,7 @@ int prime(int n, int itr)
 		return (1);
 	if (n % itr == 0 || n <= 1)
 		return (0);
-	return(prime(n, itr + 1));
+	return (prime(n, itr + 1));
 }
 /**
  * is_prime_number - Checks if a number is prime.
