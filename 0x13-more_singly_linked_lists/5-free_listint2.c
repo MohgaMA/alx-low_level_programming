@@ -13,11 +13,10 @@ void free_listint2(listint_t **head)
 	
 	if (head == NULL || *head == NULL)
 		return;
-
-	address = *head;
 	
-	while (address)
+	while (*head)
 	{
+		address = *head;
 		node = address->next;
 		free(address);
 		address = node;
