@@ -11,7 +11,7 @@ void print_rev(char *s)
 	len = _strlen(s);
 	while (len != 0)
 	{
-		_putchar(s[len]);
+		_putchar(s[len - 1]);
 		len--;
 	}
 	_putchar('\n');
@@ -23,9 +23,9 @@ void print_rev(char *s)
  */
 int _strlen(char *s)
 {
-        int i = 0;
-
-        while (s[i] != '\0')
-                i++;
-        return (i);
+	int i = 0;
+	
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
