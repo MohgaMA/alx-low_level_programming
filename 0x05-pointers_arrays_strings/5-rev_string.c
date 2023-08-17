@@ -6,19 +6,18 @@
 */
 void rev_string(char *s)
 {
-	int len = 0, i;
+	int len, i;
 	char *c;
-
+	
 	len = _strlen(s);
 	while (len != 0)
 	{
 		i = 0;
-		c[i] = s[len - 1];
-		len--;
+		c[i] = s[len - 1]
+                len--;
 		i++;
-	}
+        }
 	*s = *c;
-
 }
 /**
  *_strlen - returns the length of a string
@@ -28,7 +27,7 @@ void rev_string(char *s)
 int _strlen(char *s)
 {
 	int i = 0;
-	
+
 	while (s[i] != '\0')
 		i++;
 	return (i);
