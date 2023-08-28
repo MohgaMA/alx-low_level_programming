@@ -7,7 +7,7 @@
  *
  * Return: Always o.
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char __attribute__((__unused__)) *argv[])
 {
 	printf("myname is %s\n", argv[argc - 1]);
 	return (0);
