@@ -7,7 +7,7 @@
  *
  * Return: Always o.
  */
-int mynameis(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("myname is %s\n", argv[argc - 1]);
 	return (0);
