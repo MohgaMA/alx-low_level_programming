@@ -43,9 +43,13 @@ int mul(int a, int b)
  */
 int div(int a, int b)
 {
-	int result = a / b;
+	if (b == 0)
+	{
+		printf("Error: devision by zero\n");
+		return (0);
+	}
 
-	return (result);
+	return (a / b);
 }
 /**
  * mod - function modulas two numbers
@@ -55,9 +59,12 @@ int div(int a, int b)
  */
 int mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error: devision by zero\n");
+		return (0);
+	}
 
-	int result = a % b;
-
-	return (result);
+	return (a % b);
 }
 
