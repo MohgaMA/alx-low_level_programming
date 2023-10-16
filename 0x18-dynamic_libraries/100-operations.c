@@ -43,14 +43,7 @@ int mul(int a, int b)
  */
 int div(int a, int b)
 {
-	int result;
-
-	if (b == 0)
-	{
-		printf("Error : division by zero\n");
-		return (0);
-	}
-	result = a / b;
+	int result = a / b;
 
 	return (result);
 }
@@ -63,14 +56,7 @@ int div(int a, int b)
 int mod(int a, int b)
 {
 
-	int result;
-
-	if (b == 0)
-	{
-		printf("Error : division by zero\n");
-		return (0);
-	}
-	result = a % b;
+	int result = a % b;
 
 	return (result);
 }
